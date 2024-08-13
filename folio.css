@@ -1,0 +1,441 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #35b0dc;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Header Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between menu and social links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px;
+    background-color: #35b0dc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #f4b400; /* Highlight color on hover */
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.social-links a {
+    margin-left: 15px; /* Space between social icons */
+}
+
+.social-icon {
+    width: 24px;  /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+
+/* Hero Section */
+/* Hero Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0db8ec;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-image: url('your-background-image.jpg'); /* Optional: Add a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container within Hero */
+#home .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Image */
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section Title */
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #f4b400;
+}
+
+/* Hero Section Subtitle */
+#home p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Hire Me Button */
+#home .btn-primary {
+    background-color: #f4b400;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#home .btn-primary:hover {
+    background-color: #333;
+    color: #f4b400;
+    transform: scale(1.05);
+}
+
+/* Heading Styles */
+h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    align-items: center;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #004080); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #28a745, #218838); /* Green gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #218838, #1e7e34); /* Darker green gradient on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+}
+
+/* Resume Button Specific Styling */
+#resume .btn {
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(45deg, #35b0dc, #238bc8); /* Red gradient */
+}
+
+#resume .btn:hover {
+    background: linear-gradient(45deg, #c82333, #b02a34); /* Darker red gradient on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+}
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+section h2 {
+    color: #ff7300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* About Me Section Specific Styling */
+#about .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.about-content p {
+    background-color: rgb(254, 255, 255);
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #000000;
+    font-family: 'Georgia', serif;
+}
+
+#education {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff7300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.education-card h3 {
+    color: #35b0dc;
+    margin-top: 0;
+}
+
+.education-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.description {
+    font-style: italic;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff7300;
+}
+
+/* Project Card */
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+/* Project Info */
+.project-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Contact Form Styling */
+/* Contact Me Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff7300;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center; /* Center text */
+    color: #555;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Max width for the form */
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #35b0dc;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus, 
+form textarea:focus {
+    border-color: #f4b400; /* Change border color on focus */
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #f4b400;
+    transform: scale(1.05);
+}
+
+
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(135deg, #333 0%, #555 100%); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+

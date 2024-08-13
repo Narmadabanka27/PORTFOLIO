@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="folio.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/banka-narmada" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/Narmadabanka27" target="_blank">
+                    <img src="github.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/narmada__banka_" target="_blank">
+                    <img src="instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <img src="image.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Banka Narmada</h1>
+            <p>Computer Science Engineering Student</p>
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a passionate Computer Science Engineering student with a keen interest in software development and problem-solving. My goal is to leverage my technical skills and creativity to build innovative solutions and contribute to the technology sector.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-card">
+                <h3>Computer Science and Engineering</h3>
+                <p>Rajeev Gandhi Memorial College of Engineering & Technology, Expected 2025</p>
+                <p class="description">In-depth study of computing systems, programming languages, and software development.</p>
+                <h3>Intermediate</h3>
+                <p>Narayana Junior College, 2019-2021</p>
+                <p class="description">Completed a comprehensive high school curriculum with a focus on mathematics and science.</p>
+                <h3>SSC</h3>
+                <p>Sri Sivapriya High School, 2018-2019</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="chatbot.jpeg" alt="Project Thumbnail" class="project-img">
+                <div class="project-info">
+                    <h3>Chatbot</h3>
+                    <p class="project-description">
+                        <ul><li>Developed a chatbot that answered customer queries and improved customer service.</li>
+                        <li>The use of chatbots as a form of e-learning brings lots of opportunities.</li>
+                        <li>Uses INTENT to identify what the user requesting.</li>
+                        <li>Implemented machine learning algorithms for improving response accuracy and relevance over
+                            time.</li>
+                    </ul>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="resume.pdf" class="btn btn-secondary" download>Download My Resume</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to discuss potential opportunities, please fill out the form below:</p>
+            <form action="mailto:john.doe@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Banka Narmada. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
